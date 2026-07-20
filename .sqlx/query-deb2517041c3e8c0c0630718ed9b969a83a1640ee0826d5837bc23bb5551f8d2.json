@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "\n        INSERT INTO delivery_attempts (\n            id, event_id, endpoint_id, endpoint_url, status, attempt_count, next_attempt_at, created_at\n        )\n        VALUES (?, ?, ?, ?, ?, ?, ?, ?)\n        ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 8
+    },
+    "nullable": []
+  },
+  "hash": "deb2517041c3e8c0c0630718ed9b969a83a1640ee0826d5837bc23bb5551f8d2"
+}

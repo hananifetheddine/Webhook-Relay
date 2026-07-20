@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "\n        UPDATE delivery_attempts\n        SET next_attempt_at = ?\n        WHERE id = ?\n          AND status IN ('pending', 'failed')\n          AND next_attempt_at <= ?\n        ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": []
+  },
+  "hash": "b28628935f332e7d97a0e35c5e963a26acfcc4cf067745a60b10bc3f2bf5de56"
+}

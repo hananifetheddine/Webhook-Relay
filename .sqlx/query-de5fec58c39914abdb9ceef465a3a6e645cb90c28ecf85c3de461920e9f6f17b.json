@@ -1,0 +1,31 @@
+{
+  "db_name": "MySQL",
+  "query": "\n            SELECT id\n            FROM delivery_attempts\n            WHERE status IN ('pending', 'failed')\n              AND next_attempt_at <= ?\n              AND event_id = ?\n            ORDER BY next_attempt_at\n            LIMIT ?\n            ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "id",
+        "type_info": {
+          "type": "String",
+          "flags": "NOT_NULL | PRIMARY_KEY | NO_DEFAULT_VALUE",
+          "collation": 255,
+          "max_size": 144
+        },
+        "origin": {
+          "Table": {
+            "table": "webhook_relay.delivery_attempts",
+            "name": "id"
+          }
+        }
+      }
+    ],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "de5fec58c39914abdb9ceef465a3a6e645cb90c28ecf85c3de461920e9f6f17b"
+}

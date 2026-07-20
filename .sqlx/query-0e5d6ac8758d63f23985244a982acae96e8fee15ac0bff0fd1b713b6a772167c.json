@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "\n        UPDATE delivery_attempts\n        SET status = 'success',\n            http_status = ?,\n            attempt_count = ?,\n            last_attempt_at = ?,\n            next_attempt_at = NULL\n        WHERE id = ?\n        ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 4
+    },
+    "nullable": []
+  },
+  "hash": "0e5d6ac8758d63f23985244a982acae96e8fee15ac0bff0fd1b713b6a772167c"
+}

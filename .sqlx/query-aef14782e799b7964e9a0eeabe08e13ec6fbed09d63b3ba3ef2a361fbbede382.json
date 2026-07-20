@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "\n            UPDATE delivery_attempts\n            SET status = 'pending',\n                attempt_count = 0,\n                http_status = NULL,\n                next_attempt_at = ?,\n                last_attempt_at = NULL,\n                endpoint_url = ?\n            WHERE event_id = ? AND endpoint_id = ?\n            ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 4
+    },
+    "nullable": []
+  },
+  "hash": "aef14782e799b7964e9a0eeabe08e13ec6fbed09d63b3ba3ef2a361fbbede382"
+}

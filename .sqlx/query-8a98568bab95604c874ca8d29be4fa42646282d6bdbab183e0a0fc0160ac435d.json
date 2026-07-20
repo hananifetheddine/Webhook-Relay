@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "\n        INSERT INTO endpoints (id, user_id, url, event_types, secret, active, created_at)\n        VALUES (?, ?, ?, ?, ?, 1, ?)\n        ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 6
+    },
+    "nullable": []
+  },
+  "hash": "8a98568bab95604c874ca8d29be4fa42646282d6bdbab183e0a0fc0160ac435d"
+}

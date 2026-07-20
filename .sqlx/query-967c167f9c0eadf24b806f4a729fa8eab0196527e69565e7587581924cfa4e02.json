@@ -1,0 +1,12 @@
+{
+  "db_name": "MySQL",
+  "query": "\n        UPDATE endpoints\n        SET active = 0\n        WHERE id = ? AND user_id = ? AND active = 1\n        ",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 2
+    },
+    "nullable": []
+  },
+  "hash": "967c167f9c0eadf24b806f4a729fa8eab0196527e69565e7587581924cfa4e02"
+}
